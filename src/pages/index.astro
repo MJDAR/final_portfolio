@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -13,6 +14,11 @@ import '../styles/global.css';
 	</head>
 	<body>
 		<div class="title">Maria's Portfolio</div>
+		<button type="button" class="graphic-design btn">Graphic Design</button>
+		<button type="button" class="art-and-music btn">Art & Music</button>
+		<button type="button" class="branding btn">Branding & Marketing</button>
+		<button type="button" class="architecture btn">Architecture</button>
+		<Footer />
 	</body>
 </html>
 
@@ -23,6 +29,8 @@ import '../styles/global.css';
   margin: 0 auto;
   padding: 0 20px;
 background-image: url("file:///Users/mariadarocha/Downloads/nnnoise%20(1).svg");
+font-weight:200;
+  font-size: 50px;
 
 }
 	
@@ -30,18 +38,59 @@ background-image: url("file:///Users/mariadarocha/Downloads/nnnoise%20(1).svg");
 	color: #AAB7FF;
 	background-color: #EFF1FF;
 	padding: auto;
-  font-size: 1rem;
   border-radius: 50px;
-  min-height: 100px;
-  min-width: 420px;
-  font-weight:200;
-  font-size: 35px;
-  padding-top: 26px;
+  padding: 27px 80px 27px 80px;
   text-align: center;
-  box-shadow: -2px 4px 5px #C2C2C2;
+  box-shadow: -1px 2px 4px #e8e8e8;
   position: absolute;
-  left: 660px;
-  top:375px;
+  left: 600px;
+  top:400px;
 
+}
+
+.btn {
+	border: none;
+	color: #AAB7FF;
+	background-color: #EFF1FF;
+	border-radius: 80px;
+  padding: 20px 60px 20px 60px;
+    box-shadow: -1px 2px 4px #e8e8e8;
+  font-size: 30px;
+  font-family: 'Inter';
+  font-weight: 250;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: #AAB7FF;
+  box-shadow: -2px 4px 4px #e8e8e8;
+  color: #EFF1FF;
+  transform: scale(1.1);
+
+}
+
+.architecture{
+	position: absolute;
+	top: 750px;
+	left: 1250px;
+}
+
+.graphic-design{
+	position: absolute;
+	top: 130px;
+	left: 250px;
+}
+
+
+.art-and-music{
+	position: absolute;
+	top: 165px;
+	left: 1200px;
+}
+
+.branding{
+	position: absolute;
+	top: 680px;
+	left: 190px;
 }
 </style>
